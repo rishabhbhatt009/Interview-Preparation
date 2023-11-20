@@ -77,7 +77,7 @@ class Trie:
 
 >[!Warning]
 >- don't forget to set is_word when inserting 
->- don't for get to set val when inserting
+>- don't forget to set val when inserting
 >
 
 > [!Note]
@@ -93,3 +93,5 @@ class Trie:
 ## Optimization 
 
 - Search : Store max length at each node, if the length of search word > max length of node return False 
+
+---

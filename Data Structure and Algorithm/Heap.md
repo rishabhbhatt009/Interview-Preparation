@@ -1,7 +1,7 @@
 # Heap
 ---
 
-- Priority Queue != Head
+- Priority Queue != Heap
 - Priority Queue (abstract) while heap is an actual data structure
 - Heap is a Complete Binary Tree (CBT)
 - Every node is >= (max-heap) or <= (min-heap) its children 
@@ -9,14 +9,14 @@
 ---
 ## Python Implementation 
 
-- we use `heapq`
-- converts the list to **min-heap** using `heapify()` 
+- we use `heapq` = which is a **binary heap**
+- converts the list to **min-heap** using `heapify(list)->None` 
 - for **max-heap** make values (keys) negative
 
 
 >[!Note]
 >Time complexity of operations
->	-  make heap = `heapq.heapify` = $O(n)$
+>	-  make heap = `heapq.heapify(list)->None` = $O(n)$
 >	- push element = `heapq.heappush(heap,element)` = $O(log(n))$
 >	- remove element = `heapq.heappop(heap)` = $O(log(n))$
 >	- get min = `heap[0]` = $O(1)$
@@ -34,7 +34,7 @@ import heapq
 lst = [1,2,4 ...]
 
 # Operations 
-heapq.heapify(lst) # convert lst to heap and store in itself
+heapq.heapify(lst) # convert lst to heap and store in itself (returns None)
 heapq.heappush(lst, element) # add val
 heapq.heappop(heap) # pop min-val from top 
 

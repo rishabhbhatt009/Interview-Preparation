@@ -1,31 +1,18 @@
 # Graphs 
 ---
-## Topics 
-
-
-
----
+## Introduction
 Graph is a ==non-linear data structure==
 
-## Introduction
-*Types of graphs :*
+- *Types of graphs :*
 	- Undirected 
-	- Directed 
-		- Cyclic 
-		- Acyclic ~ [[Trees]] also called as DAG
+	- Directed : Cyclic, Acyclic ~ [[Trees]] also called as DAG
 	- *Weighted Graph* 
-
-*Terms Associated :*
-	- vertex / vertices
-	- edge 
-	- paths => sequence of edges
-	- path length => # of edges
-	- cycle 
-	- *negative weighted cycle*
+- *Terms Associated :*
+	- vertex / vertices, edge 
+	- path => sequence of edges, path length => # of edges
+	- cycle, *negative weighted cycle*
 	- connectivity 
-	- degree
-		- in degree 
-		- out degree 
+	- degree : in degree, out degree 
 
 ---
 ## Representation
@@ -43,7 +30,7 @@ graph = {
 		 2: {1: 3} 
 		 }
 
-# 3. edge list : 
+# 3. edge list : (a,b,wt)
 graph = [ 
 		 (0, 1, 2), 
 		 (1, 0, 2), 

@@ -1,6 +1,6 @@
 ### Binary Search
 
-
+---
 Core Algorithm
 
 ```python
@@ -20,9 +20,16 @@ def search (array:list[int], value:int) -> int :
 	return -1 
 ```
 
+>[!Note]
 Time Complexity : $O(log(N))$ 
 
-Types :
+---
+When ever you encounter a variation think about **how the search direction will change** 
+
+---
+Variations :  
 - Simple no array (sqrt)
 - API call
 - Rotated
+
+---

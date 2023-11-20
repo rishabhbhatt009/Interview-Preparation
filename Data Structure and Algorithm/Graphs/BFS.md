@@ -32,23 +32,17 @@ Step 2 : Traverse
 # BFS-Traversal 
 def bfs(self, source, dest):
 	# BFS-Traversal 
-	queue = [source] 
+	queue = collections.deque([source]) 
 	visited = set()
-	
 	while queue:
-		curr_node = queue.pop(0)
-		
+		curr_node = queue.popleft()
 		if curr_node in visited:
 			continue 
-			
 		if curr_node == dest :
 			return True 
-		
 		for x in graph[curr_node]:
 			queue.append(x)
-		
 		visited.add(curr_node)
-	
 	return False
 
 def valid_path(n: int, edges: List[List[int]], source: int, dest: int) -> bool:

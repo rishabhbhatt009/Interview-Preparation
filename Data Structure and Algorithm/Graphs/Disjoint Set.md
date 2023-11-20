@@ -14,7 +14,7 @@ There are 2 operations :
 >==union by rank== helps us create a balanced tree while the ==path compression== helps us connect a node to its root directly instead indirectly through a parent. The combined effect helps us achieve a time complexity of $O(\alpha(N)) = O(1)$ for find() and union().
 >
 >**Remember** : 
->	- **When to use this** : for connectivity problems where you ==do not care about the length of the path==. 
+>	- **When to use this** : for connectivity problems in ==undirected graph== where you ==do not care about the length of the path==. 
 >	- **Clean up** : run find on all nodes at the end as it might be possible they are not pointing to their root node. You can mask it by making it count the number of roots.
 >	- **Count Root Nodes** : Count starts at size and decrease every time 2 nodes with different root are connected. ==remember to use nonlocal== 
 
@@ -22,6 +22,7 @@ There are 2 operations :
 # Constructor 
 root = list(range(size))
 rank = [1] * size
+num_roots = size
 
 # Path Compression
 def find(X:int) -> int:
@@ -35,6 +36,7 @@ def union(X:int, Y:int) -> None:
 	rootY = find(Y)
 	
 	if rootX != rootY:
+		size -= 1
 		if rank[rootX] > rank[rootY]:
 			root[rootY] = rootX
 		elif rank[rootY] > rank[rootX]:
@@ -44,13 +46,12 @@ def union(X:int, Y:int) -> None:
 			rank[rootX] += 1
 
 def connected(node1:int, node2:int) -> bool:
-	return root[X] == root[Y]		
-
+	return root[X] == root[Y] # might not give correct result beofre clean up 		
 # Go through all edges and do union to create the data structure 
 for (x,y) in edges :
 	union(x,y)
 
-# Clean Up or count number of roots 
+# Clean Up or count number of roots / use num_roots
 def count_roots() -> set():
 	root_nodes = set()
 	for i in range(size):
@@ -83,6 +84,7 @@ Time complexity for quick_union are worst case. Therefore to connect N elements 
 ### union by rank helps us balance the tree:
 When we do union by rank we generate a more ==balanced tree== with minimal height. This allows find() to run faster. 
 
+---
 ## Revision
 1. [The Earliest Moment When Everyone Become Friends](https://leetcode.com/explore/featured/card/graph/618/disjoint-set/3912/) 
 2. [Optimize Water Distribution in a Village](https://leetcode.com/explore/featured/card/graph/618/disjoint-set/3916/) - this is not a good disjoint set application
