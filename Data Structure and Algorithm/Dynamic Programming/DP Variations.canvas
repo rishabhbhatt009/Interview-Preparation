@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"a809ac12ea00d32e","type":"text","text":"# How do we identify DP \n\n1. You have to make **choices** -> recursion \n2. Recursion + Overlapping sub problems makes it DP\n3. The question will ask for **optimal (min/max) answer**","x":-160,"y":-1020,"width":520,"height":260},
+		{"id":"fd67a63398046644","type":"text","text":"# 0-1 Knapsack Problem \n\n\n\n","x":-160,"y":-729,"width":1200,"height":138},
+		{"id":"386cf80d6b424cef","type":"text","text":"# Unbounded Knapsack","x":-160,"y":-560,"width":1200,"height":130},
+		{"id":"1ee445ecc01e298b","type":"file","file":"Data Structure and Algorithm/Dynamic Programming/Longest-Common-Subsequence.md","x":-160,"y":-360,"width":1200,"height":760},
+		{"id":"9b47a27d7b3f16eb","type":"text","text":"# DP Parent Problems \n\n- 0-1 Knapsack\n- Unbounded Knapsack\n- Fibonacci\n- Longest Common Subsequence (LCS)\n- Longest Increasing Subsequence (LIS)\n- Kadane's Algorithm\n- Matrix Chain Multiplication \n- DP on Trees \n- DP on Grid \n- Others ","x":-1090,"y":-440,"width":460,"height":380,"color":"2"},
+		{"id":"d4c55d3f900b0367","type":"text","text":"# Dynamic Programming \n\n- Solution Flow : \n\t1. Identify problem \n\t2. Recursive solution  \n\t3. Memoization (Top-Down)\n\t4. Bottom Up","x":-1100,"y":-780,"width":480,"height":260}
+	],
+	"edges":[
+		{"id":"a5c5b5401a3e4a82","fromNode":"d4c55d3f900b0367","fromSide":"bottom","toNode":"9b47a27d7b3f16eb","toSide":"top"},
+		{"id":"0c2fb6eaac1305e7","fromNode":"d4c55d3f900b0367","fromSide":"right","toNode":"a809ac12ea00d32e","toSide":"left","label":"identify problem"}
+	]
+}
