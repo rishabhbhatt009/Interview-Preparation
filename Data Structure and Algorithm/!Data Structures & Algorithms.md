@@ -21,7 +21,7 @@
 	4. [[Single Source Shortest Path ]]
 	5. [[Topological Sorting ]]
 7. [[Recursion]]
-9. [[Dynamic Programming]]
+9. [[Dynamic Programming]] | [[DP Variations]]
 10. [[Complexity Analysis]]
 11. Paradigms : Greedy, Divide and Conquer, [[Backtracking]]
 12. Misc. Topics :

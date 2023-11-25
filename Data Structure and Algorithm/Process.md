@@ -9,8 +9,8 @@ process
 `<<< formulate a solid logic before you start coding >>>`
 4. **Code** the solution
 `<<< breathe control your desire to run/submit >>>`
-5. **Dry Run #1** 
-6. **Create test/edge cases**
+5. **Dry Run #1** ***
+6. **Create test/edge cases** 
 7. **Dry Run #2** 
 8. **Run**
 

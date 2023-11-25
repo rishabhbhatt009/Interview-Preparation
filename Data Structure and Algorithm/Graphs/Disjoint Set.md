@@ -69,8 +69,11 @@ def count_roots() -> set():
 >Where $N$ is the number of vertices in the graph 
 >Where $\alpha()$ is the **Inverse Ackermann Function** = O(1) in practice
 
+![[Pasted image 20231120091017.png]]
+
 ---
 ## Other Algorithms 
+
 | Algorithms       |   FIND    |   UNION   |  CONNECT  |
 |:---------------- |:---------:|:---------:|:---------:|
 | Quick Find       |   O(1)    |   O(N)    |   O(1)    |
